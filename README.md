@@ -8,7 +8,7 @@ c) `synthetic_dataset.py` creates synthetic data drawn from the normal distribut
 d) `deconet_synthetic.py` builds the DECONET model, which is then trained and tested on the synthetic dataset created in (c)
 
 
-##Train model
+## Train model
 
 In order to run each script, the user must supply a set of arguments, with default values listed in an argparse environment, in each of the three deconet scripts. For example, if one wishes to train and test DECONET on CIFAR10, with 20 layers, redundancy 30 * 1024, kaiming initialization and 50% CS ratio, the desired command will be the following:
 
