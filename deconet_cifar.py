@@ -419,7 +419,7 @@ class DECONET(nn.Module):
                     (1 - theta1) * torch.einsum("as,bs->ba", self.phi.t(), u1)
                     + theta1 * torch.einsum("as,bs->ba", self.phi.t(), z1)
                     - (1 - theta2) * torch.einsum("am,bm->ba", self.A.t(), u2)
-                    - theta2 * torch.einsum("am,bm->ba", self.A.t(), u2)
+                    - theta2 * torch.einsum("am,bm->ba", self.A.t(), z2)
                 )
                 / mu
             )
